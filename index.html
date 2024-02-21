@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>1. Write a blog on Difference between HTTP1.1 vs HTTP2</h3>
+
+    <p>
+        HTTP/1.1: The Foundation
+
+HTTP/1.1, the predecessor to HTTP/2, has been the workhorse of web communication for more than a decade. While it has served the online community well, certain limitations prompted the need for a more efficient protocol. Here are some key characteristics of HTTP/1.1:
+
+Serial Processing:
+         One of the notable drawbacks of HTTP/1.1 is its serial processing of requests. This means that each request must be completed before the next one starts, leading to potential delays in loading web pages.
+
+Header Overhead:
+         Every HTTP/1.1 request carries a substantial amount of redundant header information, contributing to increased latency and larger data payloads.
+
+Connection Limitations:
+         Multiple parallel connections are often required to load various page assets, such as images, scripts, and stylesheets, leading to resource contention and slower page rendering.
+
+HTTP/2: A Leap Forward
+
+HTTP/2, designed to address the shortcomings of HTTP/1.1, introduces several innovative features that enhance the speed, efficiency, and security of web communication:
+
+Multiplexing: 
+          A groundbreaking improvement in HTTP/2 is the ability to multiplex multiple streams within a single connection. This means that multiple requests and responses can be processed concurrently, eliminating the need for multiple connections and reducing latency.
+
+Header Compression:
+         HTTP/2 uses a more efficient header compression mechanism called HPACK, which significantly reduces the overhead associated with header information. This leads to faster data transfer and improved page load times.
+
+Binary Protocol:
+         Unlike the plain text format of HTTP/1.1, HTTP/2 uses a binary protocol, which is more compact and can be processed more efficiently by both servers and clients.
+
+Server Push:
+         Another notable feature of HTTP/2 is server push, allowing the server to proactively send resources to the client before they are explicitly requested. This optimizes page loading by reducing the number of round trips needed to fetch assets.
+
+Connection Multiplexing: HTTP/2 allows for connection multiplexing, meaning that multiple streams can be managed within a single TCP connection. This reduces the overhead associated with establishing and maintaining multiple connections.
+    </p>
+<h3>2.Write a blog about objects and its internal representation in Javascript </h3>
+<p>
+    What are Objects?
+
+Imagine a box filled with various treasures. Each treasure is uniquely labeled and represents a property, while the box itself holds onto them, serving as the object. In JavaScript, objects are similar - they store named collections of key-value pairs, where keys are like the labels and values can be anything from simple data types like numbers and strings to complex objects themselves.
+
+Delving into the Internal Representation:
+
+While we interact with objects using clear-cut properties and methods, their internal representation is more nuanced. Here's what it entails:
+
+Properties: Each property has a key (usually a string) and a value. But internally, there's more. Properties also have attributes that define their characteristics, like "writable" or "enumerable".
+Prototype Chain: Every object inherits properties and methods from a prototype. This hierarchy allows for code reuse and efficient memory management. The ultimate prototype is the Object.prototype, the grandparent of all JavaScript objects.
+Hidden Properties: Objects have hidden properties like [[Prototype]] that link them to their prototype and internal methods used by the JavaScript engine.
+Understanding the Magic:
+
+By understanding these internal mechanics, you unlock deeper control over your objects:
+
+Dynamic behavior: Objects are dynamic, meaning you can add, remove, or modify properties on the fly. This flexibility enables powerful data manipulation.
+Prototypal inheritance: Prototype chains allow you to define reusable properties and methods, promoting code organization and maintainability.
+Closures: Closures leverage hidden properties to create functions that remember their environment, enabling powerful techniques like private variables and state management.
+Mastering the Craft:
+
+With this newfound knowledge, here's how you can elevate your object usage:
+
+Leverage built-in methods: Explore methods like Object.keys(), Object.values(), and Object.assign() to effectively manage object properties.
+Create custom prototypes: Define specialized prototypes for specific object types to organize code and share common behaviors.
+Be mindful of closures: Utilize closures strategically for data privacy and encapsulation, but be aware of potential memory leaks.
+</p>
+<h3>3.codekata practice</h3>
+<p>
+    What programming language are you practicing with?
+                Knowing your language will help me suggest relevant katas and resources.
+What is your current skill level? 
+                Are you a beginner, intermediate, or advanced programmer? This helps me recommend katas that are appropriate for your level.
+What specific areas do you want to improve?
+               Are you looking to practice algorithms, data structures, problem-solving, or something else?
+Do you have any specific katas in mind? 
+               If you've already encountered some katas you'd like to try, feel free to share them.
+</p>
+
+<h3> 4. Read about IP address, port, HTTP methods, MAC address</h3>
+<p>
+    IP Address:
+An IP (Internet Protocol) address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. IP addresses serve two main purposes: host or network interface identification and location addressing. There are two types of IP addresses: IPv4 (32-bit) and IPv6 (128-bit). IPv4 addresses are more common and are written as four sets of numbers separated by dots (e.g., 192.168.1.1), while IPv6 addresses are written in hexadecimal format with colons separating each block.
+
+Port:
+          Ports are used to identify specific processes or services on a device in a network. A port number is a 16-bit unsigned integer, thus ranging from 0 to 65535. Ports help in distinguishing different services running on the same device. The Internet Assigned Numbers Authority (IANA) maintains a list of well-known port numbers, such as port 80 for HTTP (Hypertext Transfer Protocol) and port 443 for HTTPS (Hypertext Transfer Protocol Secure).
+
+HTTP Methods:
+          HTTP methods, also known as HTTP verbs, define the actions that can be performed on a resource. The primary HTTP methods include:
+
+GET:
+          Retrieve data from a specified resource.
+POST: 
+          Submit data to be processed to a specified resource.
+PUT: 
+          Update a specified resource or create a new resource if it does not exist.
+DELETE:  
+         Delete a specified resource.
+PATCH: 
+        Apply partial modifications to a resource.
+HEAD: 
+        Retrieve the headers of a specified resource without the actual data.
+OPTIONS:
+        Describe the communication options for a specified resource.
+TRACE: 
+        Perform a message loop-back test along the path to the target resource.
+ These methods allow clients and servers to interact with resources in various ways, forming the foundation of communication in the World Wide Web.
+
+MAC Address:
+MAC (Media Access Control) address is a unique identifier assigned to each network interface card (NIC) for communication on a network. It is a hardware address that is usually assigned by the manufacturer and is used at the data link layer of the OSI model. MAC addresses are essential for local network communication, and they ensure that data is directed to the correct device within the same physical network.
+</p>
+
+</body>
+</html>
